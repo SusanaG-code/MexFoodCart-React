@@ -4,7 +4,7 @@ const DishCard = (props) => {
   return (
     <div>
       <div class="card">
-        <img src="./1.jpg" alt="Siu Bao" class="card_image" />
+        <img src="./1.jpg" alt="Mexican Flavour" class="card_image" />
         <h5 class="card_title container">{props.name}</h5>
         <p class="card_description container">{props.description}</p>
         <div class="card_price-button container">

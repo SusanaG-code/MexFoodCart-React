@@ -1,0 +1,4 @@
+.dish-List {
+  flex-wrap: wrap;
+  display: flex;
+}

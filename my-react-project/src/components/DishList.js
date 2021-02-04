@@ -1,4 +1,5 @@
 import DishCard from "./DishCard";
+import "../stylesheets/DishList.css";
 
 const DishList = (props) => {
   console.log(props.data);
@@ -14,7 +15,7 @@ const DishList = (props) => {
 
   return (
     <div>
-      <ul>{dishList}</ul>
+      <ul className="dish-List">{dishList}</ul>
     </div>
   );
 };

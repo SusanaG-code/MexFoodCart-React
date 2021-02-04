@@ -1,4 +1,6 @@
 .card {
   border: solid 3px;
   width: 200px;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
