@@ -2,7 +2,8 @@ const data = [
   {
     id: 1,
     name: "Tacos de cochinita pibil",
-    image: "./1.jpg",
+    image:
+      "https://dam.cocinafacil.com.mx/wp-content/uploads/2019/08/tacos-de-cochinita.jpg",
     description: "Tacos de cochinita pibil con cebolla morada y aguacate",
     price: 10,
     ingredients: [
@@ -14,7 +15,8 @@ const data = [
   {
     id: 2,
     name: "Chiles en nogada",
-    image: "./2.jpg",
+    image:
+      "https://recetas.mx/wp-content/uploads/2019/01/chile-en-nogada-50420119.jpg",
     description:
       "Chile poblano relleno con carne de cerdo y/o res mezclada con manzana panochera, pera lechera y durazno.",
     price: 12,
@@ -28,7 +30,8 @@ const data = [
   {
     id: 3,
     name: "Pozole",
-    image: "./3.jpg",
+    image:
+      "https://img-global.cpcdn.com/recipes/recipes_116031_v1419127785_receta_foto_00116031-hdzuxutbgf0qf577tqri/1200x630cq70/photo.jpg",
     description:
       "Sopa hecha a base de granos de maíz al que se agrega carne de pollo.​",
     price: 15,
@@ -37,7 +40,8 @@ const data = [
   {
     id: 4,
     name: "Enchiladas",
-    image: "./4.jpg",
+    image:
+      "http://www.superama.com.mx/views/micrositio/recetas/images/fiestaspatrias/enchiladasverdes/Web_fotoreceta.jpg",
     description:
       "Tortillas suaves de maíz rellenas de res, pollo, pavo o cerdo, y queso. Con salsa de frijoles, chiles y  acompañadas con algunas verduras frescas como tomate, lechuga en tiras delgadas, cebolla picada o guacamole.",
     price: 14,
@@ -54,7 +58,8 @@ const data = [
   {
     id: 5,
     name: "Tacos al pastor",
-    image: "./5.jpg",
+    image:
+      "http://www.comedera.com/wp-content/uploads/2017/08/tacos-al-pastor-receta.jpg",
     description:
       "Tacos de carne de cerdo con piña y torillas de maíz hechas a mano",
     price: 12,
