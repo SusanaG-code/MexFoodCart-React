@@ -6,6 +6,7 @@ const data = [
       "https://dam.cocinafacil.com.mx/wp-content/uploads/2019/08/tacos-de-cochinita.jpg",
     description: "Tacos de cochinita pibil con cebolla morada y aguacate",
     price: 10,
+    level: "No spice for me",
     ingredients: [
       "cochinita pibil",
       "cebolla morada",
@@ -20,6 +21,7 @@ const data = [
     description:
       "Chile poblano relleno con carne de cerdo y/o res mezclada con manzana panochera, pera lechera y durazno.",
     price: 12,
+    level: "I wanna try but survive",
     ingredients: [
       "Chile poblano",
       "Carne de cerdo y/o res",
@@ -35,6 +37,7 @@ const data = [
     description:
       "Sopa hecha a base de granos de maíz al que se agrega carne de pollo.​",
     price: 15,
+    level: "I wanna try but survive",
     ingredients: ["granos de maíz", "carne de res o pollo"],
   },
   {
@@ -45,6 +48,7 @@ const data = [
     description:
       "Tortillas suaves de maíz rellenas de res, pollo, pavo o cerdo, y queso. Con salsa de frijoles, chiles y  acompañadas con algunas verduras frescas como tomate, lechuga en tiras delgadas, cebolla picada o guacamole.",
     price: 14,
+    level: "Like mexican",
     ingredients: [
       "tortilla de maíz hecha a mano",
       "carne de res, pollo, cerdo o pavo",
@@ -64,6 +68,7 @@ const data = [
       "Tacos de carne de cerdo con piña y torillas de maíz hechas a mano",
     price: 12,
     ingredients: ["sopa", "ramen", "miso", "setas", "tofu"],
+    level: "Like mexican",
   },
 ];
 
