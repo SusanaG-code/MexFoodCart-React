@@ -61,3 +61,5 @@ const data = [
     ingredients: ["sopa", "ramen", "miso", "setas", "tofu"],
   },
 ];
+
+export default data;

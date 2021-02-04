@@ -5,12 +5,10 @@ const DishCard = (props) => {
     <div>
       <div class="card">
         <img src="./1.jpg" alt="Siu Bao" class="card_image" />
-        <h5 class="card_title container">Tacos de cochinita pibil</h5>
-        <p class="card_description container">
-          Tacos de cochinita pibil con cebolla morada y aguacate.
-        </p>
+        <h5 class="card_title container">{props.name}</h5>
+        <p class="card_description container">{props.description}</p>
         <div class="card_price-button container">
-          <p class="card_price">10€</p>
+          <p class="card_price">{props.price}</p>
           <button class="card_button">Añadir al carro</button>
         </div>
       </div>
