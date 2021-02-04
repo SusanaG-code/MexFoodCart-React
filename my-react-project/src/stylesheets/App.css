@@ -1,6 +1,7 @@
 .App {
   text-align: center;
-  background-image: "../images/aztec.jpg";
+  background-image: url("../images/aztec.jpg");
+  height: 100vh;
 }
 
 .App-logo {
