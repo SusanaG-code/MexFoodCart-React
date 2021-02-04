@@ -12,6 +12,8 @@ const Filter = (props) => {
         <option value="I wanna try but survive">I wanna try but survive</option>
         <option value="No spice for me">No spice for me</option>
       </select>
+      <label>Ordenar alfabéticamente</label>
+      <input type="radio"></input>
     </form>
   );
 };
