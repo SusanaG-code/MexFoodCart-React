@@ -1,9 +1,8 @@
 import "../stylesheets/App.css";
-import DishCard from "./DishCard";
+import Filter from "./Filter";
 import Header from "./Header";
 import DishList from "./DishList";
 import data from "../services/dishes";
-import Filter from "./Filter";
 
 function App() {
   console.log(data);
@@ -13,10 +12,8 @@ function App() {
       <div className="main_card-list">
         <Header />
         <Filter></Filter>
-
         <DishList data={data}></DishList>
       </div>
-      <img></img>
     </div>
   );
 }
