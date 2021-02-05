@@ -6,7 +6,7 @@ const Filter = (props) => {
       </label>
       <label>¿Qué buscas?</label>
       <input type="text"></input>
-      <label>¿Cuál es tu nivel de picante?</label>
+      <label>¿Cuál es tu nivel de picanteeee?</label>
       <select>
         <option value="Like mexican">Like mexican</option>
         <option value="I wanna try but survive">I wanna try but survive</option>

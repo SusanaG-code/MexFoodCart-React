@@ -1,4 +1,9 @@
-.cartLogo {
-  width: 200px;
-  height: 200px;
+.header {
+  border: solid 3px blue;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logoCart {
+  width: 100px;
 }
