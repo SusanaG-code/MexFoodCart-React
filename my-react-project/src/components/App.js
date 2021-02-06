@@ -19,7 +19,6 @@ function App() {
   };
 
   const handleSelect = (inputSelect) => {
-    console.log(inputSelect);
     setValueSelect(inputSelect);
   };
 
@@ -43,19 +42,21 @@ function App() {
   //   return false;
   // });
 
-  const filteredDishes = dataFood.filter((eachDish) => {
-    return (
-      eachDish.name
-        .toLocaleLowerCase()
-        .includes(filterText.toLocaleLowerCase()) ||
-      eachDish.description
-        .toLocaleLowerCase()
-        .includes(filterText.toLocaleLowerCase()) ||
-      eachDish.ingredients.includes(filterText.toLocaleLowerCase())
-    );
-  });
-
-  // .filter((eachDish) => (eachDish.level === valueSelect ? true : false));
+  const filteredDishes = dataFood
+    .filter((eachDish) => {
+      return (
+        eachDish.name
+          .toLocaleLowerCase()
+          .includes(filterText.toLocaleLowerCase()) ||
+        eachDish.description
+          .toLocaleLowerCase()
+          .includes(filterText.toLocaleLowerCase()) ||
+        eachDish.ingredients.includes(filterText.toLocaleLowerCase())
+      );
+    })
+    .filter((eachDish) => {
+      return valueSelect === "All" || eachDish.level === valueSelect;
+    });
 
   return (
     <div className="App">
@@ -64,6 +65,8 @@ function App() {
         <Filter
           handleFilterText={handleFilterText}
           handleSelect={handleSelect}
+          filterText={filterText}
+          valueSelect={valueSelect}
         ></Filter>
         <DishList data={filteredDishes} comprar={comprar}></DishList>
       </div>
