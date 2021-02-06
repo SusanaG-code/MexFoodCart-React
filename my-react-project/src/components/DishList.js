@@ -10,6 +10,7 @@ const DishList = (props) => {
       id={eachDish.id}
       key={eachDish.id}
       image={eachDish.image}
+      comprar={props.comprar}
     />
   ));
 
