@@ -3,10 +3,14 @@ import Filter from "./Filter";
 import Header from "./Header";
 import DishList from "./DishList";
 import data from "../services/dishes";
+import React, { useState } from "react";
 
 function App() {
-  const handleFilterText = (inputValue) => {
-    console.log("he llegado", inputValue);
+  const [dataFood] = useState(data);
+  const [filterText, setFilterText] = useState("");
+
+  const handleFilterText = (filterText) => {
+    setFilterText(filterText);
   };
 
   return (
@@ -14,7 +18,7 @@ function App() {
       <div className="main_card-list">
         <Header />
         <Filter handleFilterText={handleFilterText}></Filter>
-        <DishList data={data}></DishList>
+        <DishList data={dataFood}></DishList>
       </div>
     </div>
   );

@@ -7,7 +7,7 @@ const Filter = (props) => {
   return (
     <form className="mb-1">
       <label className="form__label" htmlFor="name">
-        Filtrar por picante:
+        ¿Qué buscas?
       </label>
       <label>¿Qué buscas?</label>
       <input type="text" onChange={handleFilterText}></input>
