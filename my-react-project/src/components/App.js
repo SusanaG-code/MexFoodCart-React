@@ -13,6 +13,8 @@ function App() {
     setFilterText(filterText);
   };
 
+  const filteredDishes = dataFood.filter((eachDish) => {});
+
   return (
     <div className="App">
       <div className="main_card-list">

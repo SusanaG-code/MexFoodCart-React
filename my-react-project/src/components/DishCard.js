@@ -1,6 +1,9 @@
 import "../stylesheets/DishCard.css";
 
 const DishCard = (props) => {
+  const handleClick = (ev) => {
+    cons click Valu
+  };
   return (
     <div>
       <div class="card">
@@ -10,7 +13,9 @@ const DishCard = (props) => {
         <p class="card_description container">{props.description}</p>
         <div class="card_price-button container">
           <p class="card_price">{props.price}€</p>
-          <button class="card_button">Añadir al carro</button>
+          <button class="card_button" onClick={handleClick}>
+            Añadir al carro
+          </button>
         </div>
       </div>
     </div>
