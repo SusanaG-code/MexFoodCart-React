@@ -1,11 +1,16 @@
 const Filter = (props) => {
+  const handleFilterText = (ev) => {
+    const inputValue = ev.target.value;
+    props.handleFilterText(inputValue);
+  };
+
   return (
     <form className="mb-1">
       <label className="form__label" htmlFor="name">
         Filtrar por picante:
       </label>
       <label>¿Qué buscas?</label>
-      <input type="text"></input>
+      <input type="text" onChange={handleFilterText}></input>
       <label>¿Cuál es tu nivel de picanteeee?</label>
       <select>
         <option value="Like mexican">Like mexican</option>

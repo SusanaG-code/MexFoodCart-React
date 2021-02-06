@@ -9,7 +9,7 @@ const DishCard = (props) => {
         <h5 class="card_title container">{props.name}</h5>
         <p class="card_description container">{props.description}</p>
         <div class="card_price-button container">
-          <p class="card_price">{props.price}</p>
+          <p class="card_price">{props.price}€</p>
           <button class="card_button">Añadir al carro</button>
         </div>
       </div>

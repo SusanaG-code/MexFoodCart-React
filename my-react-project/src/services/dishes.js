@@ -17,7 +17,7 @@ const data = [
     id: 2,
     name: "Chiles en nogada",
     image:
-      "https://recetas.mx/wp-content/uploads/2019/01/chile-en-nogada-50420119.jpg",
+      "https://www.ngenespanol.com/wp-content/uploads/2018/08/%C2%BFC%C3%B3mo-nacieron-los-chiles-en-nogada.jpg",
     description:
       "Chile poblano relleno con carne de cerdo y/o res mezclada con manzana panochera, pera lechera y durazno.",
     price: 12,

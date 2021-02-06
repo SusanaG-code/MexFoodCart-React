@@ -5,13 +5,15 @@ import DishList from "./DishList";
 import data from "../services/dishes";
 
 function App() {
-  console.log(data);
+  const handleFilterText = (inputValue) => {
+    console.log("he llegado", inputValue);
+  };
 
   return (
     <div className="App">
       <div className="main_card-list">
         <Header />
-        <Filter></Filter>
+        <Filter handleFilterText={handleFilterText}></Filter>
         <DishList data={data}></DishList>
       </div>
     </div>
