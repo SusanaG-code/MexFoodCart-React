@@ -8,7 +8,8 @@ import React, { useState } from "react";
 function App() {
   const [dataFood] = useState(data);
   const [filterText, setFilterText] = useState("");
-  const [valueSelect, setValueSelect] = useState("All");
+  const [filterSelect, setFilterSelect] = useState("All");
+  const [filterCheckbox, setFilterCheckbox] = useState(false);
 
   const handleFilterText = (filterText) => {
     setFilterText(filterText);
@@ -18,8 +19,12 @@ function App() {
     console.log("hola");
   };
 
-  const handleSelect = (valueSelect) => {
-    setValueSelect(valueSelect);
+  const handleSelect = (filterSelect) => {
+    setFilterSelect(filterSelect);
+  };
+
+  const handleCheckbox = (filterCheckbox) => {
+    setFilterCheckbox(filterCheckbox);
   };
 
   const filteredDishes = dataFood
@@ -35,9 +40,26 @@ function App() {
       );
     })
     .filter((eachDish) => {
-      return valueSelect === "All" || eachDish.level === valueSelect;
-    })
-    .sort((dish1, dish2) => (dish1.name > dish2.name ? 1 : -1));
+      return filterSelect === "All" || eachDish.level === filterSelect;
+    });
+
+  if (filterCheckbox) {
+    filteredDishes.sort((a, b) => {
+      if (a.name < b.name) {
+        return -1;
+      }
+      if (a.name > b.name) {
+        return 1;
+      }
+      return 0;
+    });
+  }
+
+  //Sort when the component is renderized.
+  //   .sort((dish1, dish2) =>
+  //   dish1.name.toLocaleLowerCase() > dish2.name.toLocaleLowerCase() ? 1 : -1
+  // );
+
   return (
     <div className="App">
       <div className="main_card-list">
@@ -45,8 +67,10 @@ function App() {
         <Filter
           handleFilterText={handleFilterText}
           handleSelect={handleSelect}
+          handleCheckbox={handleCheckbox}
           filterText={filterText}
-          valueSelect={valueSelect}
+          filterSelect={filterSelect}
+          filterCheckbox={filterCheckbox}
         ></Filter>
         <DishList data={filteredDishes} comprar={comprar}></DishList>
       </div>

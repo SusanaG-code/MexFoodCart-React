@@ -11,7 +11,8 @@ const Filter = (props) => {
 
   const handleCheckbox = (ev) => {
     const valueCheckbox = ev.target.value;
-    console.log(valueCheckbox);
+
+    props.handleCheckbox(valueCheckbox);
   };
 
   return (
@@ -29,7 +30,7 @@ const Filter = (props) => {
         <option value="No spice for me">No spice for me</option>
       </select>
       <label>Ordenar alfabéticamenteeeee</label>
-      <input type="checkbox" onChange={handleCheckbox} value={true}></input>
+      <input type="checkbox" onClick={handleCheckbox} value={true}></input>
     </form>
   );
 };
