@@ -18,29 +18,9 @@ function App() {
     console.log("hola");
   };
 
-  const handleSelect = (inputSelect) => {
-    setValueSelect(inputSelect);
+  const handleSelect = (valueSelect) => {
+    setValueSelect(valueSelect);
   };
-
-  // const filteredDishes = dataFood.filter((eachDish) => {
-  //   if (filterText === "") {
-  //     return true;
-  //   } else {
-  //     if (
-  //       eachDish.name
-  //         .toLocaleLowerCase()
-  //         .includes(filterText.toLocaleLowerCase()) ||
-  //       eachDish.description
-  //         .toLocaleLowerCase()
-  //         .includes(filterText.toLocaleLowerCase()) ||
-  //       eachDish.ingredients.includes(filterText.toLocaleLowerCase())
-  //     ) {
-  //     } else if (eachDish.level === inputSelect) {
-  //       return true;
-  //     }
-  //   }
-  //   return false;
-  // });
 
   const filteredDishes = dataFood
     .filter((eachDish) => {
@@ -56,8 +36,8 @@ function App() {
     })
     .filter((eachDish) => {
       return valueSelect === "All" || eachDish.level === valueSelect;
-    });
-
+    })
+    .sort((dish1, dish2) => (dish1.name > dish2.name ? 1 : -1));
   return (
     <div className="App">
       <div className="main_card-list">
@@ -75,3 +55,22 @@ function App() {
 }
 
 export default App;
+// const filteredDishes = dataFood.filter((eachDish) => {
+//   if (filterText === "") {
+//     return true;
+//   } else {
+//     if (
+//       eachDish.name
+//         .toLocaleLowerCase()
+//         .includes(filterText.toLocaleLowerCase()) ||
+//       eachDish.description
+//         .toLocaleLowerCase()
+//         .includes(filterText.toLocaleLowerCase()) ||
+//       eachDish.ingredients.includes(filterText.toLocaleLowerCase())
+//     ) {
+//     } else if (eachDish.level === inputSelect) {
+//       return true;
+//     }
+//   }
+//   return false;
+// });

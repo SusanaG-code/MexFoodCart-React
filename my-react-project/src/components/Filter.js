@@ -9,6 +9,11 @@ const Filter = (props) => {
     props.handleSelect(inputSelect);
   };
 
+  const handleCheckbox = (ev) => {
+    const valueCheckbox = ev.target.value;
+    console.log(valueCheckbox);
+  };
+
   return (
     <form className="mb-1">
       <label className="form__label" htmlFor="name">
@@ -24,7 +29,7 @@ const Filter = (props) => {
         <option value="No spice for me">No spice for me</option>
       </select>
       <label>Ordenar alfabéticamenteeeee</label>
-      <input type="radio"></input>
+      <input type="checkbox" onChange={handleCheckbox} value={true}></input>
     </form>
   );
 };
