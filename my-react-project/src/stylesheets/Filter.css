@@ -1,0 +1,43 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Bowlby One SC";
+  font-size: 20px;
+  font-weight: lighter;
+  justify-content: space-around;
+  background-color: #8e4d1f;
+}
+
+.input-filters {
+  display: flex;
+}
+
+.label-text {
+  margin-top: 10px;
+}
+
+.input-text {
+  width: 300px;
+}
+
+.input-select {
+  width: 100px;
+  height: 30px;
+}
+
+.select-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-right: 50px;
+}
+
+.checkbox-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

@@ -4,14 +4,11 @@ const data = [
     name: "Tacos de cochinita pibil",
     image:
       "https://dam.cocinafacil.com.mx/wp-content/uploads/2019/08/tacos-de-cochinita.jpg",
-    description: "Tacos de cochinita pibil con cebolla morada y aguacate",
+    description:
+      "Tacos with slow-roasted pork. It involves marinating the meat in strongly acidic citrus juice, adding annatto seed which imparts a vivid burnt orange color",
     price: 10,
     level: "No spice for me",
-    ingredients: [
-      "cochinita pibil",
-      "cebolla morada",
-      "torillas de maíz hecha a mano",
-    ],
+    ingredients: ["cochinita pibil", "red onion", "tortillas"],
   },
   {
     id: 2,
@@ -19,15 +16,10 @@ const data = [
     image:
       "https://www.ngenespanol.com/wp-content/uploads/2018/08/%C2%BFC%C3%B3mo-nacieron-los-chiles-en-nogada.jpg",
     description:
-      "Chile poblano relleno con carne de cerdo y/o res mezclada con manzana panochera, pera lechera y durazno.",
+      "A dish of poblano chiles stuffed with picadillo, topped with a walnut-based cream sauce, called nogada, pomegranate seeds and parsley, ",
     price: 12,
     level: "I wanna try but survive",
-    ingredients: [
-      "Chile poblano",
-      "Carne de cerdo y/o res",
-      "manzanas",
-      "peras",
-    ],
+    ingredients: ["chile poblano", "meat", "apples", "pears"],
   },
   {
     id: 3,
@@ -35,10 +27,10 @@ const data = [
     image:
       "https://img-global.cpcdn.com/recipes/recipes_116031_v1419127785_receta_foto_00116031-hdzuxutbgf0qf577tqri/1200x630cq70/photo.jpg",
     description:
-      "Sopa hecha a base de granos de maíz al que se agrega carne de pollo.​",
+      "A traditional soup made from hominy with meat, it can be seasoned and garnished with shredded lettuce, chile peppers, onion, garlic, radishes, avocado, salsa or limes.​",
     price: 15,
     level: "I wanna try but survive",
-    ingredients: ["granos de maíz", "carne de res o pollo"],
+    ingredients: ["pork", "chicken", "lettuce", "avocado"],
   },
   {
     id: 4,
@@ -46,17 +38,17 @@ const data = [
     image:
       "http://www.superama.com.mx/views/micrositio/recetas/images/fiestaspatrias/enchiladasverdes/Web_fotoreceta.jpg",
     description:
-      "Tortillas suaves de maíz rellenas de res, pollo, pavo o cerdo, y queso. Con salsa de frijoles, chiles y  acompañadas con algunas verduras frescas como tomate, lechuga en tiras delgadas, cebolla picada o guacamole.",
+      "A corn tortilla rolled around a filling and covered with a savory sauce. They can be filled with meats, cheese, beans, vegetables or combinations. They are cover in chili-based sauces",
     price: 14,
     level: "Like mexican",
     ingredients: [
-      "tortilla de maíz hecha a mano",
-      "carne de res, pollo, cerdo o pavo",
-      "frijoles",
-      "chiles",
+      "tortilla",
+      "chicken",
+      "beans",
+      "chilli",
       "guacamole",
-      "tomate",
-      "cebolla picada",
+      "tomato",
+      "onion",
     ],
   },
   {
@@ -65,10 +57,43 @@ const data = [
     image:
       "http://www.comedera.com/wp-content/uploads/2017/08/tacos-al-pastor-receta.jpg",
     description:
-      "Tacos de carne de cerdo con piña y torillas de maíz hechas a mano",
+      "Taco made with spit-grilled pork. Based on the lamb shawarma brought by Lebanese immigrants from Mexico",
     price: 12,
-    ingredients: ["sopa", "ramen", "miso", "setas", "tofu"],
+    ingredients: ["tortilla", "pork", "pineapple"],
     level: "Like mexican",
+  },
+  {
+    id: 6,
+    name: "Divorced eggs",
+    image:
+      "https://cdn.queapetito.com/wp-content/uploads/2019/08/huevos-divorciados-600x469.jpg",
+    description:
+      "This classic Mexican breakfast screams Sunday brunch. Two eggs separated by refried beans and drenched in red and green salsa. There’s no custody...",
+    price: 8,
+    ingredients: ["eggs", "sauce", "tortilla"],
+    level: "I wanna try but survive",
+  },
+  {
+    id: 7,
+    name: "Gringas",
+    image:
+      "https://i2.wp.com/golososdelmundo.com/wp-content/uploads/2016/04/gringa-al-pastor3.jpg?fit=1024%2C710",
+    description:
+      "A variety of tacos which consist of a flour tortilla filled with cheese, al pastor, and pineapple.[1] This is then grilled in the same manner as a quesadilla.",
+    price: 8,
+    ingredients: ["cheese", "pineapple", "tortilla"],
+    level: "No spice for me",
+  },
+  {
+    id: 8,
+    name: "Tamales",
+    image:
+      "https://vivirmejor.mx/wp-content/uploads/2020/08/Comida-Tipica-Mexicana-Tamales-Rajas-Portada.jpg",
+    description:
+      "A mixture of corn dough (masa) and filling, wrapped in a banana leaf or corn husk, and then steamed.",
+    price: 8,
+    ingredients: ["corn", "chicken", "banana leaf"],
+    level: "No spice for me",
   },
 ];
 

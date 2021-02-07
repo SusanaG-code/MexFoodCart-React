@@ -1,0 +1,18 @@
+.logoCart {
+  width: 0px;
+  height: 0px;
+  border-left: 200px solid transparent;
+  border-bottom: 200px solid #35bc85;
+}
+
+.cartImg {
+  top: 60px;
+  position: absolute;
+  padding: 4px;
+  border: solid 5px black;
+  border-radius: 2px solid;
+  border-radius: 60px;
+  right: 50px;
+  width: 100px;
+  height: 100px;
+}

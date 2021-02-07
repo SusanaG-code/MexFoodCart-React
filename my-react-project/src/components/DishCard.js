@@ -1,20 +1,22 @@
 import "../stylesheets/DishCard.css";
 
 const DishCard = (props) => {
-  const comprar = (props) => {
-    props.comprar();
+  const handleShop = (ev) => {
+    const valueBtn = ev.target.value;
+    props.handleShop(valueBtn);
   };
   return (
     <div>
-      <div class="card">
+      <div className="card">
         <img src={props.image} alt="Mexican Flavour" className="image" />
 
-        <h5 class="card_title container">{props.name}</h5>
-        <p class="card_description container">{props.description}</p>
-        <div class="card_price-button container">
-          <p class="card_price">{props.price}€</p>
-          <button class="card_button" onClick={() => comprar(props)}>
-            Añadir al carro
+        <h5 className="card_title">{props.name}</h5>
+        <div className="description-box">
+          <p className="card_description">{props.description}</p>
+
+          <p className="card_price">{props.price}€</p>
+          <button className="card_btn" onClick={handleShop}>
+            Add to cart
           </button>
         </div>
       </div>
@@ -23,3 +25,9 @@ const DishCard = (props) => {
 };
 DishCard.propTypes = {};
 export default DishCard;
+
+// onClick={() => comprar(props)}
+
+// const comprar = (props) => {
+//   props.comprar();
+// };

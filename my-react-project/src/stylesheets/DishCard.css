@@ -1,10 +1,32 @@
 .card {
   border: solid 3px;
-  width: 200px;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  border-radius: 10px;
+  width: 220px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 100px;
+  margin-bottom: 40px;
   background-color: beige;
 }
+
+.card_title {
+  font-family: "Neucha";
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: -10px;
+}
+
+.card_description {
+  font-family: "Public Sans";
+}
 .image {
-  width: 200px;
+  width: 220px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.card_btn {
+  margin-bottom: 20px;
 }

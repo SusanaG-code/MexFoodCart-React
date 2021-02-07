@@ -10,13 +10,10 @@ function App() {
   const [filterText, setFilterText] = useState("");
   const [filterSelect, setFilterSelect] = useState("All");
   const [filterCheckbox, setFilterCheckbox] = useState(false);
+  const [counter, setCounter] = useState(0);
 
   const handleFilterText = (filterText) => {
     setFilterText(filterText);
-  };
-
-  const comprar = (compra) => {
-    console.log("hola");
   };
 
   const handleSelect = (filterSelect) => {
@@ -25,6 +22,10 @@ function App() {
 
   const handleCheckbox = (filterCheckbox) => {
     setFilterCheckbox(filterCheckbox);
+  };
+
+  const handleShop = () => {
+    setCounter(counter + 1);
   };
 
   const filteredDishes = dataFood
@@ -63,7 +64,7 @@ function App() {
   return (
     <div className="App">
       <div className="main_card-list">
-        <Header />
+        <Header counter={counter} />
         <Filter
           handleFilterText={handleFilterText}
           handleSelect={handleSelect}
@@ -72,7 +73,7 @@ function App() {
           filterSelect={filterSelect}
           filterCheckbox={filterCheckbox}
         ></Filter>
-        <DishList data={filteredDishes} comprar={comprar}></DishList>
+        <DishList data={filteredDishes} handleShop={handleShop}></DishList>
       </div>
     </div>
   );
