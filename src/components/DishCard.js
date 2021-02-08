@@ -16,7 +16,7 @@ const DishCard = (props) => {
 
           <p className="card_price">{props.price}€</p>
           <button className="card_btn" onClick={handleShop}>
-            Add to carts
+            Add to cart
           </button>
         </div>
       </div>
