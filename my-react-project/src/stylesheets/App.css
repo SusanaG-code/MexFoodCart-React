@@ -1,7 +1,15 @@
 .App {
   text-align: center;
-  background-image: url("../images/aztec.jpg");
+
   background-repeat: no-repeat;
 
-  background-position: center;
+  background-position: cover;
+}
+
+html {
+  background: url("../images/aztec.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }

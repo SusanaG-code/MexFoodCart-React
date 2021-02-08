@@ -1,5 +1,4 @@
 .header {
-  border: solid 3px blue;
   display: flex;
   justify-content: space-between;
   color: white;
@@ -9,7 +8,6 @@
 }
 
 .menu {
-  border: solid yellow 4px;
   background-color: #ffce4b;
   width: 280px;
   display: flex;
@@ -18,8 +16,8 @@
 }
 
 .hat {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
 }
 
 .skull {
@@ -40,7 +38,7 @@
   width: 0px;
   height: 0px;
   border-left: 200px solid transparent;
-  border-bottom: 200px solid #35bc85;
+  border-bottom: 200px solid #2c89a6;
 }
 
 .cartImg {
