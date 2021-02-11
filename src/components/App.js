@@ -56,11 +56,6 @@ function App() {
     });
   }
 
-  //Sort when the component is renderized.
-  //   .sort((dish1, dish2) =>
-  //   dish1.name.toLocaleLowerCase() > dish2.name.toLocaleLowerCase() ? 1 : -1
-  // );
-
   return (
     <div className="App">
       <div className="main_card-list">
@@ -80,22 +75,3 @@ function App() {
 }
 
 export default App;
-// const filteredDishes = dataFood.filter((eachDish) => {
-//   if (filterText === "") {
-//     return true;
-//   } else {
-//     if (
-//       eachDish.name
-//         .toLocaleLowerCase()
-//         .includes(filterText.toLocaleLowerCase()) ||
-//       eachDish.description
-//         .toLocaleLowerCase()
-//         .includes(filterText.toLocaleLowerCase()) ||
-//       eachDish.ingredients.includes(filterText.toLocaleLowerCase())
-//     ) {
-//     } else if (eachDish.level === inputSelect) {
-//       return true;
-//     }
-//   }
-//   return false;
-// });

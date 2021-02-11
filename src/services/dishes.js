@@ -79,7 +79,7 @@ const data = [
     image:
       "https://i2.wp.com/golososdelmundo.com/wp-content/uploads/2016/04/gringa-al-pastor3.jpg?fit=1024%2C710",
     description:
-      "A variety of tacos which consist of a flour tortilla filled with cheese, al pastor, and pineapple.[1] This is then grilled in the same manner as a quesadilla.",
+      "A variety of tacos which consist of a flour tortilla filled with cheese, al pastor, and pineapple. This is then grilled in the same manner as a quesadilla.",
     price: 8,
     ingredients: ["cheese", "pineapple", "tortilla"],
     level: "No spice for me",
