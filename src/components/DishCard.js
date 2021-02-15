@@ -25,9 +25,3 @@ const DishCard = (props) => {
 };
 DishCard.propTypes = {};
 export default DishCard;
-
-// onClick={() => comprar(props)}
-
-// const comprar = (props) => {
-//   props.comprar();
-// };
